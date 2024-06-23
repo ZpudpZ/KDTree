@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Seguimiento de Entregas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDNXQXESaNLrjYcVxHMAICTl5o9sh6TRk&callback=initMap" async defer></script>
+    
+    <!-- JavaScript del KD-Tree -->
+    <script src="js/kdtree.js" defer></script>
+    
+    <!-- JavaScript Principal de la Aplicación -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="map" style="height: 500px;"></div>
+            </div>
+            <div class="col-md-4">
+                <h2>Seguimiento de Entregas</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Operaciones de Entrega</h5>
+                        <button id="btnAddClient" class="btn btn-primary btn-block">Agregar Cliente</button>
+                        <button id="btnClearClients" class="btn btn-danger btn-block mt-2">Limpiar Clientes</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Leyenda</h5>
+                        <p><img src="https://maps.google.com/mapfiles/ms/micons/motorcycling.png" alt="Marcador de Moto de Entrega" width="24" height="24"> Moto de Entrega</p>
+                        <p><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Marcador de Cliente Más Cercano" width="24" height="24"> Cliente Más Cercano</p>
+                        <p><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" alt="Marcador de Otros Clientes" width="24" height="24"> Otros Clientes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

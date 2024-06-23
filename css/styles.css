@@ -1,0 +1,43 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el mapa */
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos adicionales para los botones */
+.btn {
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para botones específicos */
+.btn-primary {
+    background-color: #007bff; /* Color de fondo azul primario */
+    border-color: #007bff; /* Borde azul primario */
+}
+
+.btn-primary:hover {
+    background-color: #0069d9; /* Color de fondo azul oscuro al pasar el mouse */
+    border-color: #0062cc; /* Borde azul oscuro al pasar el mouse */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Color de fondo rojo */
+    border-color: #dc3545; /* Borde rojo */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Color de fondo rojo oscuro al pasar el mouse */
+    border-color: #bd2130; /* Borde rojo oscuro al pasar el mouse */
+}
